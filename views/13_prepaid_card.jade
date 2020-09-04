@@ -1,0 +1,64 @@
+extends layout
+
+block content 
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/trading-06-banner.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.prepaid_card.About prepaid card")
+        p=__("page.prepaid_card.Available to withdraw")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Prepaid card
+  main
+    .container.margin_60
+      .content-wrapper
+        h3.text-underline=__("page.prepaid_card.R-Card can withdraw")
+        p
+          =__("page.prepaid_card.Trade profits can be")
+        p=__("page.prepaid_card.Withdrawal with R-card")
+        p=__("page.prepaid_card.Easy procedure!")
+        h3.text-underline=__("page.prepaid_card.3 steps for issuing")
+        .wrapper-img-custom.container.margin_bot-30(style='text-align:center')
+        .row(style='display:flex; justify-content:center;flex-wrap:wrap;')
+          .col-sm-3
+            .box_service_custom_new
+              a(href='#', title='Up to 60 currency pairs')
+                i
+              img(src='./images/pre/pre_01.svg', alt='')
+              h4=__("page.prepaid_card.Open an account with Revollet")
+          .col-sm-3
+            .box_service_custom_new.box_service_custom_icon_new.box_service_custom_icon_mobile_new
+              a(href='#', title='Pre-paid card')
+                i
+              img(src='./images/pre/pre_02.svg', alt='')
+              h4=__("page.prepaid_card.Apply for R-card")
+          .col-sm-3
+            .box_service_custom_new.box_service_custom_icon_new.box_service_custom_icon_mobile_new
+              a(href='#', title='Site Statistic')
+                i
+              img(src='./images/pre/pre_03.svg', alt='')
+              h4=__("page.prepaid_card.Activate when R-card")
+        p=__("page.prepaid_card.To issue an R-Card")
+        h3.text-underline=__("page.prepaid_card.2 steps to withdraw")
+        .wrapper-img-custom.container.margin_bot-30(style='text-align:center')
+        .row(style='display:flex; justify-content:center;flex-wrap:wrap;')
+          .col-sm-5
+            .box_service_custom_new
+              a(href='#', title='Up to 60 currency pairs')
+                i
+              img(src='./images/pre/pre_04.svg', alt='' style='max-height:100px !important; max-width:none;')
+              h4=__("page.prepaid_card.Apply for withdrawal from")
+          .col-sm-3
+            .box_service_custom_new.box_service_custom_icon_new.box_service_custom_icon_mobile_new
+              a(href='#', title='Pre-paid card')
+                i
+              img(src='./images/pre/pre_05.svg', alt='')
+              h4=__("page.prepaid_card.Transfer funds from Revollet to R-card")
+        p=__("page.prepaid_card.You can only withdraw")
+        p=__("page.prepaid_card.R-Card costs a prescribed")
+        p
+          =__("page.prepaid_card.See here for R-Card plus")
+          a.a-hover-white(href='../documents/R_Card_Activation_Mnnual_20191128.pdf', target='_blank')=__("page.prepaid_card.See here for R-Card")

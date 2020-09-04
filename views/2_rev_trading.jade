@@ -1,0 +1,301 @@
+extends layout
+
+block content
+  #full-slider-wrapper
+    #layerslider(style='width:100%;height:600px;')
+      // first slide
+      .ls-slide(data-ls='slidedelay: 1000000; transition2d:85;')
+        img.ls-bg(src='images/banner1.png', alt='Slide background')
+        h3.ls-l.slide_typo(style='top:30%; left: 50%;', data-ls='offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50%\
+        bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;')
+          | ー トレードに革命を起こす ー
+        p.ls-l.slide_typo_2(style='top:52%; left:50%; text-align: center;', data-ls='durationin:2000;delayin:1000;easingin:easeOutElastic;')
+          | 暗号通貨レバレッジ取引 / 外国為替FX /
+          | CFD(商品,株価指数,個別株) 
+          br
+          | 						暗号通貨で最速入金・出金 
+          br
+          | 						レバレッジ２００倍・追証なし 
+          br
+          | 						プリペイドカード発行で現金出金
+          br
+          | 						スプレッド業界最狭
+        a.ls-l.button_intro_2(style='top:75%; left:50%;white-space:\
+        nowrap;', data-ls='durationin:2000;delayin:1400;easingin:easeOutElastic;', href='service-single.html') サインアップ
+      // second slide
+      .ls-slide(data-ls='slidedelay:5000; transition2d:103;')
+        img.ls-bg(src='images/banner2.png', alt='Slide background')
+        h3.ls-l.slide_typo(style='top: 45%; left: 50%;', data-ls='offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50%\
+        bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;')
+          | Deposit / Withdraw
+        p.ls-l.slide_typo_2(style='top:55%; left:50%;', data-ls='durationin:2000;delayin:1000;easingin:easeOutElastic;')
+          | Professional services and options
+        a.ls-l.button_intro_2(style='top:68%; left:50%;white-space:\
+        nowrap;', data-ls='durationin:2000;delayin:1400;easingin:easeOutElastic;', href='service-single-2.html') サインアップ
+  main
+    .bg_white
+      .container.margin_60_35
+        h3.main_title
+          | Rev Trading へようこそ
+        p.lead.styled(style='text-align: center;')
+          | Rev Trading は暗号通貨FX・為替FXの最先端取引プラットフォームです。
+        .row
+          .col-md-7.text-center
+            img.img-responsive(src='./images/banner.jpeg', alt='')
+          .col-md-5
+            ul.list_ok
+              li.mt-2
+                h4
+                h4
+                  | 暗号通貨を使って為替・暗号通貨のレバレッジ取引、インデクス、メタル、個別株など、世界中のマーケットに今すぐ参加できます。
+              li
+                h4
+                h4
+                  | 高い流動性、安定した操作性、幅広い自由な取引を可能にしました。
+              li
+                h4
+                h4
+                  | 暗号通貨対応のプリペイドカードの発行で、対応しているATMから現金出金、世界中どこでもショッピング利用が可能です。
+        // /row
+        // /container
+    .bg_content
+      .container.margin_120_95
+        .content_center(style='max-width: 700px;margin:auto;')
+          h3
+            em
+            | 洗練されたプラットフォーム
+          p.lead
+            | 分かりやすく、使いやすく、シンプルに洗練されたインターフェイスで、トレードの初心者からプロまで、安心してご利用いただけるサービスを心掛けています。
+          br
+          a.ls-l.button_intro_2(style='top:68%; left:50%;white-space:\
+          nowrap;', data-ls='durationin:2000;delayin:1400;easingin:easeOutElastic;', href='/trading-platform')
+            | 詳しく見る
+      // /container
+      // /bg_content
+      .container.margin_60_35
+        h2.main_title
+          em
+          | Rev Trading 最大の魅力
+        .row
+          .col-sm-4
+            .box_service
+              a(href='service-single.html', title='Search Engine Optimization')
+                i.icon_info
+              img(src='img/icon_service_1.svg', alt='')
+              h3 レバレッジ最大200倍
+              p 資金の効率運用が可能
+          .col-sm-4
+            .box_service
+              a(href='service-single-2.html', title='Keywords Analisys')
+                i.icon_info
+              img(src='img/icon_service_2.svg', alt='')
+              h3 暗号通貨建て
+              p 暗号通貨の値上がりも見逃さない
+          .col-sm-4
+            .box_service
+              a(href='service-single.html', title='Social Media Marketing')
+                i.icon_info
+              img(src='img/icon_service_3.svg', alt='')
+              h3 最速入出金
+              p 暗号通貨入金でタイミングを見逃さない
+        // /row
+        .row
+          .col-sm-4
+            .box_service
+              a(href='service-single-2.html', title='Up to 60 currency pairs')
+                i.icon_info
+              img(src='img/icon_service_4.svg', alt='')
+              h3 60種類以上の取引ペア
+              p 暗号通貨、FX、インデックス、金、銀
+          .col-sm-4
+            .box_service
+              a(href='service-single.html', title='Pre-paid card')
+                i.icon_info
+              img(src='img/icon_service_5.svg', alt='')
+              h3 プリペイドカード
+              p カードを発行して、利益を即現金化
+          .col-sm-4
+            .box_service
+              a(href='service-single-2.html', title='Site Statistic')
+                i.icon_info
+              img(src='img/icon_service_6.svg', alt='')
+              h3 充実のサポート
+              p 多言語でのサポート体制
+        // /row
+        .row
+          .col-sm-4
+            .box_service
+              a(href='service-single-2.html', title='Up to 60 currency pairs')
+                i.icon_info
+              img(src='img/icon_service_7.svg', alt='')
+              h3 MT5スマホアプリ
+              p 外出先でもお手軽にトレード
+          .col-sm-4
+            .box_service
+              a(href='service-single.html', title='Pre-paid card')
+                i.icon_info
+              img(src='img/icon_service_8.svg', alt='')
+              h3 資金安全性
+              p コールドウォレット、2段階認証で資金を保全
+          .col-sm-4
+            .box_service
+              a(href='service-single-2.html', title='Site Statistic')
+                i.icon_info
+              img(src='img/icon_service_9.svg', alt='')
+              h3 スプレッド業界最狭
+              p 短期トレードでも利益を出しやすい
+        // /row
+        .row
+          .col-sm-offset-4.col-sm-4
+            .box_service
+              a(href='service-single-2.html', title='Up to 60 currency pairs')
+                i.icon_info
+              img(src='img/icon_service_10.svg', alt='', style='width:100px')
+              h3 追証なし
+              p 安心のゼロカットシステム
+          //
+            <div class="col-sm-4">
+            <div class="box_service">
+            <a href="service-single.html" title="Pre-paid card"><i class="icon_info"></i></a>
+            <img src="img/icon_service_5.svg" alt="">
+            <h3>Different brands</h3>
+            <p>Crypto, forex, CFD</p>
+            </div>
+            </div>
+        // /row
+        // /container
+        .bg_content(style='background-image:\
+        url(images/cryptocurrency-wallet-development-bg.png);')
+          .container.margin_120(style='text-align: center;')
+            h2.main_title
+              em
+              | 入金は人気の暗号通貨で（米ドル・日本円でも可）
+            a.ls-l.button_intro_2(style='top:68%; left:50%;white-space:\
+            nowrap;', data-ls='durationin:2000;delayin:1400;easingin:easeOutElastic;', href='/deposit-withdraw')
+              | 詳しく見る
+            .box_white.box_crypto
+              a.box_item.text-center(href='')
+                img(src='images/btc.png', alt='', width='80')
+                h3.mt-2
+                  | BTC
+                  br
+                  small Bitcoin
+              a.box_item.text-center(href='')
+                img(src='images/eth.png', alt='', width='80')
+                h3.mt-2
+                  | ETH
+                  br
+                  small Ethereum
+              a.box_item.text-center(href='')
+                img(src='images/xrp-bg.png', alt='', width='80')
+                h3.mt-2
+                  | XPR
+                  br
+                  small Ripple
+          // /container
+          // /bg_content
+          .container.margin_60_35
+            h3.main_title_left
+              em
+              | 暗号通貨FXの魅力とは？
+              span 暗号通貨FXの３つのチャンス
+            .owl-carousel.owl-theme.case_studies.add_bottom_30
+              div
+                a(href='project-detail.html', title='Social Media Promotion')
+                  figure
+                    img(src='images/trade-from-sell.png', alt='')
+                  h4 売り」からの取引もできる
+                  p
+                    | レバレッジ取引では、「売り」の注文から取引を始めることもできます。つまり、価格が下がっているときでも利益を生み出すことができます。
+                    | これは、「買い」から始めることしかできない現物取引との大きな違いです。
+              div
+                a(href='project-detail.html', title='Project Conversion')
+                  figure
+                    img(src='images/intensity.png', alt='')
+                  h4 価格変動の激しさ
+                  p
+                    | レバレッジ取引では、「売り」の注文から取引を始め仮想通貨は通常の外国為替相場と違い、価格変動（ボラティリティ）が激しいです。
+                    | このような相場では、損失のリスクも高まりますが、思いもよらない利益を得るチャンスも生まれます。
+              div
+                a(href='project-detail.html', title='Project Marketing')
+                  figure
+                    img(src='images/amount.png', alt='')
+                  h4 資金よりも大きな額の取引可能
+                  p
+                    | レバレッジをかけることで自己資産よりも多くのお金を投資にあてることができます。大きな金額を取引することができれば、当然、得られる利益も大きくなります。
+            // /case_studies
+            // /container
+            .bg_white.mt5
+              .container.margin_60_0
+                .row
+                  .col-md-6
+                    img.img-responsive(src='images/mt5.jpeg', alt='')
+                  .col-md-6
+                    h3.main_title_left
+                      em
+                      | MT5
+                      span 快適なプラットフォームを提供
+                    h4.main_title_left
+                      em
+                      | MetaTrader5
+                    p.lead.styled
+                      | Rev
+                      | Tradingでは、トレーディングツールとして、世界で最も採用実績があるMetaTrader5
+                      | を利用しています。素早いレスポンスと高い約定力を実現した、快適なトレーディング環境を提供します。
+                    ul.list_ok
+                      li
+                        h4
+                          | 銀行レートを提供
+                      li
+                        h4
+                          | EAの利用可能
+                      li
+                        h4
+                          | 暗号通貨建での運用可能
+                    .download-app
+                      a(href='')
+                        img(src='images/appstore.jpg', alt='', width='200')
+                      a(href='')
+                        img(src='images/googleplay.jpg', alt='', width='200')
+                .bg_white
+                  .container.margin_60_35(style='text-align:center')
+                    h3.main_title
+                      em
+                      | 最短30秒で口座開設可
+                    .row
+                      .col-sm-3
+                        .box_service_custom
+                          a(href='#', title='Up to 60 currency pairs')
+                            i
+                          img(src='./images/deskop-01.png', alt='')
+                          h3 ウォレット開設
+                      .col-sm-3
+                        .box_service_custom
+                          a(href='#', title='Pre-paid card')
+                            i
+                          img(src='./images/deskop-02.png', alt='')
+                          h3 ウォレット入金
+                      .col-sm-3
+                        .box_service_custom
+                          a(href='#', title='Site Statistic')
+                            i
+                          img(src='./images/deskop-02.png', alt='')
+                          h3 MT5開設/入金
+                      .col-sm-3
+                        .box_service_custom
+                          a(href='#', title='Site Statistic')
+                            i
+                          img(src='./images/deskop-04.png', alt='')
+                          h3 トレード開始
+                    a.ls-l.button_intro_2(style='top:68%; left:50%;white-space:\
+                    nowrap;', data-ls='durationin:2000;delayin:1400;easingin:easeOutElastic;', href='/deposit-withdraw')
+                      | サインアップ
+  #newsletter_container.location
+    .container.margin_60
+      .text-center
+        i.ic_location.icon-location
+        h3 Bonovo Road, Fomboni, Island of Moheli, Comoros Union
+        a(href='mailto:support@rev-trading.net')
+          i.icon-mail-alt
+          | 							support@rev-trading.net
+

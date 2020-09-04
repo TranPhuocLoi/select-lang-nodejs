@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='./images/partner-banner.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.partner.About customer referrals")
+        p=__("page.partner.Introducing Broker")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Partner
+  main
+    .container.margin_60_35
+      .content-wrapper
+        p=__("page.partner.Rev Trading is constantly")
+        p
+          =__("page.partner.IB can receive lifetime")
+        p
+          =__("page.partner.In addition, Rev Trading")
+        .wrapper-img-custom.container.margin_bot-30(style='text-align:center')
+        .row(style='display:flex; justify-content:center;flex-wrap:wrap;')
+          .col-sm-2
+            .box_service_custom_new
+              a(href='#', title='Up to 60 currency pairs')
+                i
+              img(src='./images/partner/part_01.svg', alt='', style='width:100px')
+              h5=__("page.partner.Lifetime commission")
+          .col-sm-2
+            .box_service_custom_new.box_service_custom_icon_new_plus.box_service_custom_icon_mobile_new_plus
+              a(href='#', title='Pre-paid card')
+                i
+              img(src='./images/partner/part_02.svg', alt='', style='width:100px')
+              h5=__("page.partner.Real-time receiving")
+          .col-sm-2
+            .box_service_custom_new.box_service_custom_icon_new_plus.box_service_custom_icon_mobile_new_plus
+              a(href='#', title='Site Statistic')
+                i
+              img(src='./images/partner/part_03.svg', alt='', style='width:100px')
+              h5=__("page.partner.Withdrawal with R-card")
+          .col-sm-2
+            .box_service_custom_new.box_service_custom_icon_new_plus.box_service_custom_icon_mobile_new_plus
+              a(href='#', title='Site Statistic')
+                i
+              img(src='./images/partner/pa.svg', alt='', style='width:100px')
+              h5=__("page.partner.Partner")
+          .col-sm-2
+            .box_service_custom_new.box_service_custom_icon_new_line.box_service_custom_icon_mobile_new_line
+              a(href='#', title='Site Statistic')
+                i
+              img(src='./images/partner/part_05.svg', alt='', style='width:100px')
+              h5 Rev Trading IB Program
+
+        p=__("page.partner.Please contact Rev Trading")
+        a(href=__("url.link-contact"), target='_blank')=__("page.partner.Cantact for Partner program")

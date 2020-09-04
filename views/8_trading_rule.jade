@@ -1,0 +1,137 @@
+extends layout
+
+block content   
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/trading-02.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.trading_rule.About trading rules")
+        p=__("page.trading_rule.Trading time, loss cut")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Trading Rule
+  main
+    .bg
+      .container.margin_60_35
+        .row
+          .col-md-4
+            h3.main_title_left
+              em
+              =__("page.trading_rule.Base currency")
+              span USD, JPY, BTC, ETH, XRP
+            h3.main_title_left
+              em
+              =__("page.trading_rule.Leverage")
+              span 200
+            h3.main_title_left
+              em
+              =__("page.trading_rule.Order Type")
+              span
+                =__("page.trading_rule.NDD ECN")
+            p.main_title_left
+              em
+              =__("page.trading_rule.Loss cut level Current")
+            h3.main_title_left
+              em
+              =__("page.trading_rule.Additional margin call")
+              span=__("page.trading_rule.None")
+          .col-md-7.col-md-offset-1.custom-table
+            table
+              tbody
+                tr
+                  td
+                    p FX
+                  td
+                    p=__("page.trading_rule.Monday") 
+                    p=__("page.trading_rule.Tuesday")
+                    p=__("page.trading_rule.Wednesday")
+                    p=__("page.trading_rule.Thursday")
+                    p=__("page.trading_rule.Friday")
+                tr
+                  td
+                    p CFD
+                  td
+                    p=__("page.trading_rule.Monday") 
+                    p=__("page.trading_rule.Tuesday")
+                    p=__("page.trading_rule.Wednesday")
+                    p=__("page.trading_rule.Thursday")
+                    p=__("page.trading_rule.Friday")
+                tr
+                  td
+                    p Crypto
+                  td
+                    p=__("page.trading_rule.Available 24 hours a")
+        .row(style='text-align: left;margin-top:10px')
+          .col-sm-12
+            p
+              =__("page.trading_rule.Rev Trading uses a")
+              =__("page.trading_rule.Additional margin call is")
+              =__("page.trading_rule.It is a rule")
+              =__("page.trading_rule.However, please note that")
+            
+        // /row
+        // /container
+        // /bg_white
+        section.main-content.specification
+          .container.margin_60_35.mt-0.pt-0
+            .content.item.pb-4
+              h4.title=__("page.trading_rule.【About spreads】")
+              .brief.pl-3=__("page.trading_rule.As we use the")
+            .content.item.pb-4
+              h4.title=__("page.trading_rule.【About swap】")
+              .brief.pl-3=__("page.trading_rule.Interest rates of swap")
+            .content.item.pb-4
+              h4.title=__("page.trading_rule.【Swap point】")
+              .brief.pl-3
+            .content.item.pb-4
+              h4.title=__("page.trading_rule.【Transaction fees】")
+              .brief.pl-3
+                p=__("page.trading_rule.Crypto currencies")
+                p=__("page.trading_rule.Others none")
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2=__("page.trading_rule.Details of available Crypto currencies")
+                div(style='height: 500px; overflow: auto;')
+                  #dataCryptoCurrencies
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2=__("page.trading_rule.Details of available Forex")
+                div(style='height: 500px; overflow: auto;')
+                  #dataForex
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Spot Metals
+                div(style='height: 500px; overflow: auto;')
+                  #dataSpotMetals
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Indices
+                div(style='height: 500px; overflow: auto;')
+                  #dataIndices
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Spot Commodities
+                div(style='height: 300px; overflow: auto;')
+                  #dataSpotCommodities
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Shares USA
+                div(style='height: 500px; overflow: auto;')
+                  #dataSharesUSA
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Shares EU
+                div(style='height: 500px; overflow: auto;')
+                  #dataSharesEU
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Shares Rusia
+                div(style='height: 500px; overflow: auto;')
+                  #dataSharesRusia
+            .content.table-data.mt-2.mb-4
+              .table-responsive
+                h2 Shares Asia
+                div(style='height: 500px; overflow: auto;')
+                  #dataSharesAsia

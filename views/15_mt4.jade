@@ -1,0 +1,60 @@
+extends layout
+
+block content 
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/trading-04-mt4.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.mt4.About MT5")
+        p=__("page.mt4.The latest version of") 
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li MT4
+  main
+    .bg_content
+      .container.margin_60_35
+        h3.main_title(style='color: #fff;')
+          em
+          =__("page.mt4.About The Trading Platform") 
+        .wrapper-content
+          p.lead.styled
+            =__("page.mt4.MT5 (Meta Trader5)")
+          p.lead.styled
+            =__("page.mt4.There are many functions")
+          p.lead.styled
+            =__("page.mt4.In addition, since the")
+        .row
+          .col-md-7.text-center
+            img.img-responsive(src='images/trading-img-2.jpg', style='width:100%', alt='')
+          .col-md-5
+            ul.list_ok
+              li.mt-2
+                h4
+                p=__("page.mt4.Meta Quotes' latest platform")
+              li
+                h4
+                p=__("page.mt4.8 times more processing")
+              li
+                h4
+                p=__("page.mt4.Display up to 8")
+              li
+                h4
+                p=__("page.mt4.Further enhanced chart function")
+              li
+                h4
+                p=__("page.mt4.High usability in mobile")
+        // /row
+        hr(style='border:none;')
+        p.lead.styled(style='text-align: center;')
+          =__("page.mt4.Rev Trading's MT5")
+        p.lead.styled(style='text-align: center;')
+          =__("page.mt4.Please enjoy the full")
+        .download-app.justify-content-center(style='overflow: hidden;')
+          a(href='https://apps.apple.com/jp/app/metatrader-4/id496212596', target='_blank')
+            img(src='images/appstore.jpg', alt='', width='100%')
+          a(href='https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4&hl=ja', target='_blank')
+            img(src='images/googleplay.jpg', alt='', width='100%')
+          a(href='https://download.mql5.com/cdn/web/15864/mt4/revtrading4setup.exe', target='_blank')
+            img(src='images/downloadWindow.png', alt='', width='100%')

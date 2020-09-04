@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/trading-05-banner.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.revollet.About Revollet")
+        p=__("page.revollet.Customers who deposit")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Revollet
+  main
+    .container.margin_60
+      .row
+        .col-sm-6
+          h3.main_title_left
+            em
+            | Revollet
+          p=__("page.revollet.Revollet is an e-wallet")
+          p=__("page.revollet.E-wallet is a crypto")
+          a(href='https://revollet.io', target='_blank') https://revollet.io/
+        .col-sm-6
+          a(href='https://revollet.io', target='_blank')
+            img.img-responsive(src='images/section-right.png', alt='', width='100%')
+      // /row
+      // /container

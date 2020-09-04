@@ -1,0 +1,66 @@
+extends layout
+
+block content
+
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/header-contact.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.contact_us.Contact us")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Contact
+  main
+    .container.margin_60_35
+      .row
+        .col-md-12
+          h3=__("page.contact_us.Contact us")
+          p=__("page.contact_us.Please fill out the")
+          div
+            form#contactform(method = "post", action = "/captcha")
+              .row
+                .col-md-6.col-sm-6
+                  .form-group
+                    label.control-label(for='category_contact')=__("page.contact_us.Category")
+                    select#category_contact.form-control.styled.style-select-form(name='category_contact')
+                      option(disabled='', selected='')=__("page.contact_us.Please select below")
+                      option(value=__("page.contact_us.Account opening"))=__("page.contact_us.Account opening")
+                      option(value=__("page.contact_us.Partner program"))=__("page.contact_us.Partner program")
+                      option(value=__("page.contact_us.Others"))=__("page.contact_us.Others")
+              .row
+                .col-md-6.col-sm-6
+                  .form-group
+                    label=__("page.contact_us.Name")
+                    input#name_contact.form-control.styled(type='text', required="required", name='name_contact')
+                .col-md-6.col-sm-6
+                  .form-group
+                    label Email:
+                    input#email_contact.form-control.styled(type='email', required="required", name='email_contact')
+              .row
+                .col-md-12
+                  .form-group
+                    label=__("page.contact_us.Message")
+                    textarea#message_contact.form-control.styled(rows='5', name='message_contact', style='height:100px;')
+              .row
+                .col-md-12
+                  .g-recaptcha(data-sitekey='6Lci6soUAAAAAFXyJlozZQ4fdtIVJWgRcbOyzSj4', data-callback="callback")
+                  #recaptcha_message(style="color: #fd5252;margin-top: 15px;font-style: italic;font-weight: 400;display:none")= __("error_recaptcha_msg")
+                  p= error
+              .row
+                .col-md-6
+                  p
+                    input#submit-contact.btn_1(type="submit" value=__("page.contact_us.Send"))
+              #contact_message= message
+
+    script(src='https://www.google.com/recaptcha/api.js', async='', defer='')
+    script(type='text/javascript').
+      function callback() {
+        $("#recaptcha_message").hide("300");
+      }
+  
+
+    
+    
+      

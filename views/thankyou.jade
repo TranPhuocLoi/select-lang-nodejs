@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/header-contact.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.contact_us.Contact us")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Thank you
+  main
+    .container.margin_60
+      .row
+        .col-sm-12.text-center
+          h3.main_title.text-white
+            em
+            =__("page.thankyou.Thank you for contacting us")
+          br
+          a.ls-l.button_intro_2.btn-hover-1.mb-30(target='_blank', href='https://revollet.io/wallet/sign_up?token=goxiuZ2m')
+            =__("sign_up")
+  #newsletter_container.location
+    .container.margin_60
+      .text-center
+        i.ic_location.icon-location
+        h3 Bonovo Road, Fomboni, Island of Moheli, Comoros Union
+        a(href='mailto:support@rev-trading.net')
+          i.icon-mail-alt
+          |  support@rev-trading.net
+  // End newsletter_container

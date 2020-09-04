@@ -1,0 +1,95 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='./images/deposit_banner.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.deposit_withdraw.About Deposit / Withdrawal")
+        p=__("page.deposit_withdraw.We accept deposit")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Deposit & Withdraw
+  main
+    .container.margin_60_35
+      .content-wrapper
+        h3=__("page.deposit_withdraw.Deposit / Withdrawal")
+        .custom-table
+          table
+            tbody
+              tr
+                td
+                td
+                  p=__("page.deposit_withdraw.Receiving the deposit")
+                td
+                  p=__("page.deposit_withdraw.Deposit fees for")
+                td
+                  p=__("page.deposit_withdraw.Minimum amount")
+                td
+                  p=__("page.deposit_withdraw.Limited amount of")
+              tr
+                td
+                  p Revollet
+                td
+                  p=__("page.deposit_withdraw.Deposit 1 business")
+                  p=__("page.deposit_withdraw.Withdrawals 1-2 business")
+                td
+                  p=__("page.deposit_withdraw.Free of charge")
+                td
+                  p BTC0.01
+                td
+                  p=__("page.deposit_withdraw.None")
+              tr
+                td
+                  p=__("page.deposit_withdraw.Address remittance")
+                td
+                  p=__("page.deposit_withdraw.2 to 3 business")
+                  p=__("page.deposit_withdraw.2 to 3 business days")
+                td
+                  p=__("page.deposit_withdraw.Free of charge")
+                td
+                  p BTC0.01
+                td
+                  p=__("page.deposit_withdraw.None")
+        p
+         =__("page.deposit_withdraw.Learn more about the plus")
+          a(href=__('url.link-revollet'), target='_blank')=__("page.deposit_withdraw.Learn more about the")
+        h3=__("page.deposit_withdraw.Free of charge")
+        .custom-table
+          table
+            tbody
+              tr
+                td
+                td
+                  p=__("page.deposit_withdraw.Receiving the deposit")
+                  p
+                td
+                  p=__("page.deposit_withdraw.Deposit fees for")
+                td
+                  p=__("page.deposit_withdraw.Minimum amount")
+                td
+                  p=__("page.deposit_withdraw.Limited amount of")
+              tr
+                td
+                  p Bit wallet
+                td
+                  p=__("page.deposit_withdraw.Deposit 1 business")
+                  p=__("page.deposit_withdraw.Withdrawals 1-2 business")
+                td
+                  p=__("page.deposit_withdraw.Free of charge")
+                td
+                  p=__("page.deposit_withdraw.None")
+                td
+                  p=__("page.deposit_withdraw.None")
+        p
+          =__("page.deposit_withdraw.Opening Bitwallet account plus")
+          a(href=__('url.link-my-bitwallet'), target='_blank')=__("page.deposit_withdraw.Opening Bitwallet account")
+        h3=__("page.deposit_withdraw.To use R-Card for")
+        p
+          a(href=__('url.link-prepaid-card'), target='_blank')=__("page.deposit_withdraw.Please check here")
+        ul
+          li=__("page.deposit_withdraw.Rev Trading will not")
+          li=__("page.deposit_withdraw.Rev Trading will not accept")
+    // /container

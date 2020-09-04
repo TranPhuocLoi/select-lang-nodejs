@@ -1,0 +1,164 @@
+#preloader
+  div(data-loader='circle-side')
+.layer
+header
+  nav.navbar.navbar-default
+    .container
+      .navbar-header-wp
+        .navbar-header
+          a.cmn-toggle-switch.cmn-toggle-switch__htx(href='javascript:void(0);', data-toggle='collapse', data-target='#navbar')
+            span Menu mobile
+          .custom-position-flag
+            .flag-dropdown.dropdown
+              a.dropdown-toggle(href='javascript:void(0);', data-toggle='collapse', data-target='#toggle-show-flag', role='button', aria-haspopup='true', aria-expanded='false')
+                span
+                  img(src='images/flag_#{language}.svg', width='35')
+              ul#toggle-show-flag.dropdown-menu.custom-d.ropdown-flags
+                - if (language == "ja")
+                  li
+                    a(href='/en')
+                      img(src='images/flag_en.svg', width='45')
+                  li
+                    a(href='/kr')
+                      img(src='images/flag_kr.svg', width='45')
+                  li
+                    a(href='/cn')
+                      img(src='images/flag_cn.svg', width='45')
+                - else
+                  - if (language == "en")
+                    li
+                      a(href='/ja')
+                        img(src='images/flag_ja.svg', width='45')
+                    li
+                      a(href='/kr')
+                        img(src='images/flag_kr.svg', width='45')
+                    li
+                      a(href='/cn')
+                        img(src='images/flag_cn.svg', width='45')
+                  - else
+                    - if (language == "kr")
+                      li
+                        a(href='/ja')
+                          img(src='images/flag_ja.svg', width='45')
+                      li
+                        a(href='/en')
+                          img(src='images/flag_en.svg', width='45')
+                      li
+                        a(href='/cn')
+                          img(src='images/flag_cn.svg', width='45')
+                    - else
+                      li
+                        a(href='/ja')
+                          img(src='images/flag_ja.svg', width='45')
+                      li
+                        a(href='/en')
+                          img(src='images/flag_en.svg', width='45')
+                      li
+                        a(href='/kr')
+                          img(src='images/flag_kr.svg', width='45')
+          #logo_home
+            h1
+              a(href='/#{language}', title='Rev-Trading') Rev-Trading
+          #top_nav
+            ul
+              li.top_nav_desktop
+                a.btn_outline(href='https://revollet.io/ja/wallet/sign_in', target='_blank')= __("sign_in")
+              li.top_nav_desktop
+                a.btn_outline(href='https://rev-trading.ltd/', target='_blank')= __("sign_up_mt4")
+              li.top_nav_desktop
+                a.btn_outline(href='https://revollet.io/wallet/sign_up?token=goxiuZ2m', target='_blank')= __("sign_up_mt5")
+              li.top_nav_desktop.flag-dropdown.dropdown
+                a.dropdown-toggle(href='', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  span
+                    img(src='images/flag_#{language}.svg', width='45')
+                ul.dropdown-menu
+                  - if (language == "ja")
+                    li
+                      a(href='/en')
+                        img(src='images/flag_en.svg', width='45')
+                    li
+                      a(href='/kr')
+                        img(src='images/flag_kr.svg', width='45')
+                    li
+                      a(href='/cn')
+                        img(src='images/flag_cn.svg', width='45')
+                  - else
+                    - if (language == "en")
+                      li
+                        a(href='/ja')
+                          img(src='images/flag_ja.svg', width='45')
+                      li
+                        a(href='/kr')
+                          img(src='images/flag_kr.svg', width='45')
+                      li
+                        a(href='/cn')
+                          img(src='images/flag_cn.svg', width='45')
+                    - else
+                      - if (language == "kr")
+                        li
+                          a(href='/ja')
+                            img(src='images/flag_ja.svg', width='45')
+                        li
+                          a(href='/en')
+                            img(src='images/flag_en.svg', width='45')
+                        li
+                          a(href='/cn')
+                            img(src='images/flag_cn.svg', width='45')
+                      - else
+                        li
+                          a(href='/ja')
+                            img(src='images/flag_ja.svg', width='45')
+                        li
+                          a(href='/en')
+                            img(src='images/flag_en.svg', width='45')
+                        li
+                          a(href='/kr')
+                            img(src='images/flag_kr.svg', width='45')
+      #navbar.collapse.navbar-collapse.navbar-right
+        ul.nav.navbar-nav
+          li
+            a(href='/#{language}/')=__("menu.home")
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              span=__("menu.Trading Platform") 
+              i.icon-down-open
+            ul.dropdown-menu
+              li
+                a(href='/#{language}/mt4') MT4
+              li
+                a(href='/#{language}/mt5') MT5
+              li
+                a(href='/#{language}/trading-rule')=__("menu.Trading Rule") 
+              li
+                a(href='/#{language}/tradebook') Tradebook
+              li
+                a(href='/#{language}/pamm-mam') Money Manager / Fund Manager
+          li.dropdown
+            a.dropdown-toggle.d-desktop(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              span=__("menu.Deposit Withdrawal")
+              i.icon-down-open  
+            a.dropdown-toggle.d-mobile(data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+              span=__("menu.Deposit Withdrawal")
+              i.icon-down-open
+            ul.dropdown-menu
+              li.d-mobile
+                a(href='/#{language}/deposit-withdraw')=__("menu.Deposit Withdrawal")
+              li.d-desktop
+                a(href='/#{language}/deposit-withdraw')=__("menu.Deposit Withdrawal")
+              li
+                a(href='/#{language}/revollet') Revollet
+              li
+                a(href='/#{language}/prepaid-card')=__("menu.Prepaid Card")
+                a(href='/#{language}/my-bitwallet') Bitwallet
+          li
+            a(href='/#{language}/partner')=__("menu.Partners")
+          li
+            a(href='/#{language}/about-us')=__("menu.About")
+          li
+            a(href='/#{language}/contact')=__("menu.Contact") 
+          li.top_nav_mobile
+            a(href='https://revollet.io/ja/wallet/sign_in', target='_blank')= __("sign_in")
+          li.top_nav_mobile
+            a(href='https://rev-trading.ltd/', target='_blank')= __("sign_up_mt4")
+          li.top_nav_mobile
+            a(href='https://revollet.io/wallet/sign_up?token=goxiuZ2m', target='_blank')= __("sign_up_mt5")

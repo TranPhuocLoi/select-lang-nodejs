@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/about-cover.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.about.About Rev Trading")
+        p=__("page.about.Immediate access to")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li About
+  main
+    .container.margin_60
+      .row
+        .col-sm-12
+          h3.main_title_left
+            em
+            =__("page.about.Why REV TRADING?")
+            
+          p.lead.styled=__("page.about.Rev Trading uses crypto")
+          p
+            =__("page.about.Rev Trading's trading platform")
+          p
+            =__("page.about.Management philosophy that")
+          p
+            =__("page.about.We will continue to")
+          h4=__("page.about.Licence")
+      // /row
+      .row
+        .col-md-12
+          .row
+            .col-sm-3
+              .wrapper-media
+                img(src='./images/about-flag.png', alt='', width='60%')
+                h4=__("page.about.Comoros Financial Services Agency")
+            .col-sm-9
+              p=__("page.about.Rev Trading has a")

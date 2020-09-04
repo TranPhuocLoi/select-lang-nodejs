@@ -1,0 +1,202 @@
+/*============================================================================================*/
+
+/* Your custom styles below */
+
+/*============================================================================================*/
+
+.mt-0 {
+  margin-top: 0;
+}
+.pt-0 {
+  padding-top: 0;
+}
+.custom-position-flag {
+  display: none;
+}
+
+@media screen and (max-width: 574px) {
+  .navbar-header {
+    position: relative;
+  }
+  .cmn-toggle-switch {
+    right: 10px;
+    top: 22px;
+  }
+  .custom-position-flag {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+  }
+  .custom-position-flag {
+    display: block !important;
+  }
+  .custom-dropdown-flags {
+    right: -72%;
+    left: unset;
+  }
+}
+
+.custom-table {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.custom-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-table table,
+.custom-table td {
+  border: 1px solid #fff;
+}
+
+.custom-table td {
+  padding: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  .custom-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.custom-table td p {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.flag-dropdown ul {
+  min-width: auto;
+  background-color: #282828;
+}
+
+.flag-dropdown ul li {
+  margin-left: 0 !important;
+}
+
+.flag-dropdown ul li img {
+  border: 1px solid;
+}
+
+.box_style_5 .mt-2 {
+  margin-top: 1rem;
+}
+
+.case_studies div a p {
+  text-transform: inherit;
+}
+
+.box_crypto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.box_crypto .box_item {
+  margin: 10px;
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-top: 2px solid #f53e7d;
+  min-width: 200px;
+  margin-top: 40px;
+}
+
+.box_crypto .box_item h3 {
+  color: #000;
+  font-weight: 600;
+}
+
+.download-app {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.download-app a {
+  margin-right: 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.download-app a:hover {
+  transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  box-shadow: 0px 8px 15px -10px #6f6f6f !important;
+}
+.download-app img {
+  border-radius: 24px;
+  max-width: 400px;
+}
+.mt5 .main_title_left {
+  font-weight: 600;
+}
+
+.mt5 ul.list_ok li {
+  padding-left: 40px;
+}
+
+.mt5 ul.list_ok li:before {
+  content: "9";
+  top: -12px;
+}
+
+.mt5 ul.list_ok li h4 {
+  margin-bottom: 10px;
+}
+
+.box_value .box_item {
+  min-width: 30%;
+}
+
+.box_value .box_item h3 {
+  font-size: 38px;
+}
+
+.location .ic_location {
+  color: #48e0a4;
+  font-size: 50px;
+}
+
+.navbar-default .navbar-nav li a {
+  white-space: pre-wrap;
+}
+
+.list-style-none li {
+  list-style-type: none;
+}
+
+.content-wrapper p {
+  margin-bottom: 10px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+footer {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+footer a {
+  color: #9b9b9b;
+}
+
+#social_footer {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .parallax_window_in.short {
+    padding-bottom: 0;
+  }
+}

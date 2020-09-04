@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/trading-03-banner.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1 Money Manager / Fund Manager
+        p=__("page.money_manager.PAMM and other platforms")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Money Manager / Fund Manager
+  main
+    .container.margin_60
+      .content-wrapper
+        p
+          =__("page.money_manager.Rev Trading provides asset")
+        h3.text-underline Profit Share Style
+        p
+          =__("page.money_manager.Money Manager/Fund Manager")
+        p
+          =__("page.money_manager.In this case, investors")
+        p=__("page.money_manager.We have an environment")
+        h3.text-underline Mirror Trade Style
+        p=__("page.money_manager.In the case of conventional")
+        p=__("page.money_manager.In addition, investors")
+        p=__("page.money_manager.Rev Trading adopts")
+        br
+        p
+          a(href=__("url.link-contact"),target='_blank')=__("page.money_manager.Contact us for the details")
+    // /container

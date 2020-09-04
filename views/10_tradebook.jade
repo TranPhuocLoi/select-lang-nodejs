@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  section.parallax_window_in.short(data-parallax='scroll', data-image-src='images/trading-01-banner.jpg', data-natural-width='1400', data-natural-height='400')
+    #sub_content_in
+      .container
+        h1=__("page.trade_book.About TradeBook  - Social Trading -")
+        p=__("page.trade_book.Revolution in trading")
+  #position
+    .container
+      ul
+        li
+          a(href='/') Home
+        li Tradebook
+  main
+    .container.margin_60_35
+      .content-wrapper
+        p
+          =__("page.trade_book.By receiving the signals")
+        p
+          =__("page.trade_book.If you want to")
+        p
+          =__("page.trade_book.Professional traders can also")
+        p 
+          =__("page.trade_book.Easy to follow")
+        h3.text-underline=__("page.trade_book.On User side")
+       
+        .wrapper-img-custom.container.margin_bot-30(style='text-align:center')
+        .row
+          .col-sm-3
+            .box_service_custom_new
+              a(href='#', title='Up to 60 currency pairs')
+                i
+              img(src='./images/trade/trade_01.svg', alt='')
+              h4=__("page.trade_book.Open an account for")
+          .col-sm-3
+            .box_service_custom_new.box_service_custom_icon_new.box_service_custom_icon_mobile_new
+              a(href='#', title='Pre-paid card')
+                i
+              img(src='./images/trade/trade_02.svg', alt='')
+              h4=__("page.trade_book.Apply for Tradebook")
+          .col-sm-3
+            .box_service_custom_new.box_service_custom_icon_new.box_service_custom_icon_mobile_new
+              a(href='#', title='Site Statistic')
+                i
+              img(src='./images/trade/trade_03.svg', alt='')
+              h4=__("page.trade_book.Follow favorite signals")
+          .col-sm-3
+            .box_service_custom_new.box_service_custom_icon_new.box_service_custom_icon_mobile_new
+              a(href='#', title='Site Statistic')
+                i
+              img(src='./images/trade/trade_04.svg', alt='')
+              h4=__("page.trade_book.Follow favorite signals")
+        p
+          em=__("page.trade_book.You can turn on")
+        h3.text-underline=__("page.trade_book.On Signal Provider side")
+        ul.list-style-none
+          li=__("page.trade_book.Contact us about Signal Provider")
+          li
+             a(href=__("url.link-contact"),target='_blank')=__("page.trade_book.Please contact us")
+        h3.text-underline=__("page.trade_book.Power Push Signal")
+        p 
+          =__("page.trade_book.Trader, AI Trade, Swing")
+        p
+          =__("page.trade_book.The Tradebook service (hereinafter")
+
+    // /container
